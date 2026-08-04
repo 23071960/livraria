@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+      <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+      <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2? family=Josefin+Sans:ital,wght@0,400;1,700&family=Poppins:ital,wght@0,300;0,400;1,200;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>Pandora</h1>
+        <h2>livros e presentes</h2>
+    </header>
+    <section class="livros">
+        <span class="titulo_livros"></span>
+        <h2 class="carrossel__titulo"> Mais vendidos</h2>
+   <!-- Slider main container -->
+<div class="carrossel__container">
+    <div class="swiper">
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="livros/Guia Front-end.svg" alt="Livro sobre apache Kafka e spring boot da alura books"></div>
+        <div class="swiper-slide"><img src="livros/Acessibilidade.svg" alt="Livro sobre acessibilidade da alura"></div>
+        <div class="swiper-slide"><img src="livros/UX.svg" alt="Livro sobre programação front-end da alura books"></div>
+        <div class="swiper-slide"><img src="livros/Nodejs.svg" alt="Livro sobre o framework Nodejs "></div>
+        <div class="swiper-slide"><img src="livros/ReactNative.svg" alt="Livro sobre o react native da Alura books "></div>
+        <div class="swiper-slide"><img src="livros/ApacheKafka.svg" alt="Livro sobre UX; Experiencia do Usuário da Alura books "></div>
+    </div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <!--<div class="swiper-scrollbar"></div>-->
+    </div>
+
+    </section>
+    <section class="brindes">
+        <span class="titulo_brindes"></span>
+    </section>
+    <footer class="rodapé">
+        <span class="nome_empresa"></span>
+        <span class="endereco"></span>
+        <span class="autor"></span>
+    </footer>
+    <script src="main.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+     <script class="numero__slide">
+        const swiper = new Swiper(
+            ".swiper", {
+                 // speed: 400,
+                spaceBetween: 15,
+            slidesPerView: 3,
+                pagination:{
+                    el:".swiper-pagination",
+                    type:"bullets",
+                },
+            });
+     </script>   
+</body>
+</html>

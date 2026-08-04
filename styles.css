@@ -1,0 +1,19 @@
+.cabecalho{
+background-color: rgba(0, 47, 255, 0.185);
+
+}
+
+.livros{
+background-color: rgba(102, 108, 132, 0.185);
+
+}
+
+.brindes{
+background-color: rgba(233, 220, 165, 0.185);
+
+}
+.footer{
+    background-color: rgba(0, 4, 19, 0.96);
+    color: azure;
+
+}
